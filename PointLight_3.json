@@ -1,0 +1,38 @@
+{
+	"metadata": {
+		"version": 4.7,
+		"type": "Object",
+		"generator": "Object3D.toJSON"
+	},
+	"object": {
+		"uuid": "0aa5c0f7-4f82-4bba-963a-ed26c152eefd",
+		"type": "PointLight",
+		"name": "PointLight_4",
+		"userData": {
+			"name": "PointLight"
+		},
+		"layers": 1,
+		"matrix": [1,0,0,0,0,1,0,0,0,0,1,0,-0.5135207874352026,0.782320806431882,-0.07829939491896865,1],
+		"up": [0,1,0],
+		"color": 13661814,
+		"intensity": 1,
+		"distance": 0,
+		"decay": 2,
+		"shadow": {
+			"camera": {
+				"uuid": "227a89ca-9b9f-45f9-bb41-fdad9f3c6e1b",
+				"type": "PerspectiveCamera",
+				"layers": 1,
+				"up": [0,1,0],
+				"fov": 90,
+				"zoom": 1,
+				"near": 0.5,
+				"far": 500,
+				"focus": 10,
+				"aspect": 1,
+				"filmGauge": 35,
+				"filmOffset": 0
+			}
+		}
+	}
+}

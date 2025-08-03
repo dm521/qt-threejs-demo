@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js 动画演示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow: hidden;
+        }
+        
+        #container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        
+        #info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            color: white;
+            z-index: 100;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 15px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            display: none;
+        }
+        
+        #info h1 {
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+        
+        #info p {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        
+        #controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            z-index: 100;
+            display: flex;
+            gap: 10px;
+        }
+        
+        button {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="info" >
+            <h1>Three.js 动画演示</h1>
+            <p>使用鼠标拖拽旋转视角</p>
+            <p>滚轮缩放，可前后旋转</p>
+            <p>点击按钮重置视角</p>
+        </div>
+        
+        <div id="controls">
+            <button onclick="resetCamera()">重置视角</button>
+            <button onclick="moveCharacter('forward')">向前</button>
+            <button onclick="moveCharacter('backward')">向后</button>
+            <button onclick="moveCharacter('left')">向左</button>
+            <button onclick="moveCharacter('right')">向右</button>
+        </div>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html> 
